@@ -29,4 +29,5 @@ export type IndexerInterface = (config: IndexerConfig) => {
 	deleteItems: (collection: string) => Promise<void>;
 	deleteItem: (collection: string, id: string) => Promise<void>;
 	updateItem: (collection: string, id: string, data: object, pk?: string) => Promise<void>;
+	updateSettings: (collection: string, data: object) => Promise<void>;
 };
